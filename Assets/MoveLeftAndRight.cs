@@ -3,12 +3,12 @@ using System.Collections;
 
 public class MoveLeftAndRight : MonoBehaviour {
 
-	public float speed = 1.0f;
+	public float speed = 8.0f;
 
 	// Use this for initialization
 	void Start () {
 		// Set speed to 5
-		speed = 5.0f;
+		//speed = 5.0f;
 	}
 	
 	// Update is called once per frame
