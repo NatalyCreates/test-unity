@@ -4,7 +4,7 @@ using System.Collections;
 public class Move : MonoBehaviour {
 
 	public Vector3 direction = Vector3.forward;
-	public float speed = 50.0f;
+	public float speed = 1.0f;
 
 	// Use this for initialization
 	void Start () {

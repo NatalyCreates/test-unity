@@ -4,7 +4,6 @@ using System.Collections;
 public class Shoot : MonoBehaviour {
 
 	public GameObject bullet;
-	public float speed = 1.0f;
 
 	// Use this for initialization
 	void Start () {
