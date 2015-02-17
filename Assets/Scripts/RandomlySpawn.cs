@@ -19,10 +19,12 @@ public class RandomlySpawn : MonoBehaviour {
 	}
 
 	void SpawnNow() {
-		Instantiate(thing,
+		GameObject newThing = Instantiate(thing,
 		            transform.position + new Vector3(Random.Range(minHorizPos,maxHorizPos),
 		                                 Random.Range(minVertiPos,maxVertiPos)),
-		            Quaternion.identity);
+		            Quaternion.identity) as GameObject;
+		Debug.Log("The new thing is: " + newThing.ToString());
+		newThing.transform.parent = gameObject.transform;
 		Invoke("SpawnNow", Random.Range(minSpawnTime, maxSpawnTime));
 	}
 	

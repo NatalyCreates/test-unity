@@ -8,6 +8,7 @@ public class DestroyUnderZValue : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (transform.position.z <= destroyValue) {
+			Debug.Log("Z = " + transform.position.z.ToString());
 			Destroy(gameObject);
 		}
 	}
