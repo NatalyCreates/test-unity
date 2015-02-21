@@ -5,13 +5,13 @@ public class RandomlySpawn : MonoBehaviour {
 
 	public GameObject thing;
 
-	public float minHorizPos = -10.0f;
-	public float maxHorizPos = 10.0f;
-	public float minVertiPos = -10.0f;
-	public float maxVertiPos = 10.0f;
+	public float minHorizPos = -50.0f;
+	public float maxHorizPos = 50.0f;
+	public float minVertiPos = 0.0f;
+	public float maxVertiPos = 0.0f;
 
-	public float minSpawnTime = 1.0f;
-	public float maxSpawnTime = 1.0f;
+	public float minSpawnTime = 0.1f;
+	public float maxSpawnTime = 0.5f;
 
 	// Use this for initialization
 	void Start () {
