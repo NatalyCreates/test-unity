@@ -12,7 +12,7 @@ public class AnimateTexture : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		renderer.material.mainTextureOffset += vec *
+		GetComponent<Renderer>().material.mainTextureOffset += vec *
 			(GameManager.Instance.gameSpeed / 10) * Time.deltaTime;
 	}
 }

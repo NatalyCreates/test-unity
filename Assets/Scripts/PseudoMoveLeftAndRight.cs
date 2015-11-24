@@ -12,7 +12,7 @@ public class PseudoMoveLeftAndRight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		renderer.material.mainTextureOffset += vec *
+		GetComponent<Renderer>().material.mainTextureOffset += vec *
 			(GameManager.Instance.heroMoveSpeed / 10) * Input.GetAxis("Horizontal") * Time.deltaTime;
 	}
 }
